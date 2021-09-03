@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
+    "dev:watch": "webpack --mode development --watch",
     "build": "webpack --mode production"
   },
   "author": "",
@@ -13,5 +14,8 @@
     "html-webpack-plugin": "^5.3.2",
     "webpack": "^5.51.2",
     "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }
