@@ -1,9 +1,9 @@
-const field: string = 'Hello TypeScript!'
+const field: string = "Hello TypeScript!";
 
 interface WFM {
-    field: string;
+  field: string;
 }
 
-const wfm: WFM = { field }
+const wfm: WFM = { field };
 
-console.log('[TypeScript]:', wfm)
+console.log("[TypeScript]:", wfm);
