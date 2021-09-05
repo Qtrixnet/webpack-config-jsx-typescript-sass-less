@@ -18,7 +18,7 @@ module.exports = {
   },
   optimization: {
     minimizer: [
-        new OptimizeCssAssetsPlugin({})
+      new OptimizeCssAssetsPlugin({})
     ]
   },
   devServer: {
@@ -51,7 +51,15 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
-      }
+      },
+      {
+        test: /\.less$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "less-loader",
+        ],
+      },
     ]
   }
 }
