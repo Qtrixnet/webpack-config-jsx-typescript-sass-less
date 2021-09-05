@@ -21,6 +21,12 @@ module.exports = {
         new OptimizeCssAssetsPlugin({})
     ]
   },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    port: 4200,
+  },
   plugins: [
     new HTMLPlugin({
       filename: 'index.html',
