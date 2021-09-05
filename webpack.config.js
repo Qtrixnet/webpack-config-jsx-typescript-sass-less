@@ -60,6 +60,14 @@ module.exports = {
           "less-loader",
         ],
       },
+      {
+        test: /\.scss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+        ],
+      },
     ]
   }
 }
